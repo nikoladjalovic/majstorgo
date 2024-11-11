@@ -31,4 +31,9 @@ public class MajstorController {
     public void deleteMajstor(@PathVariable("id") int id){
         majstorService.deleteMajstor(id);
     }
+
+    @GetMapping("majstor/{id}")
+    public Majstor get1Majstor(@PathVariable("id") int id){
+        return majstorService.getMajstor(id);
+    }
 }

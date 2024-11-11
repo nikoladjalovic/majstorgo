@@ -42,4 +42,8 @@ public class MajstorService {
     public void deleteMajstor(int id) {
         majstorRepository.deleteById(id);
     }
+
+    public Majstor getMajstor(int id) {
+        return majstorRepository.findById(id).orElse(null);
+    }
 }
