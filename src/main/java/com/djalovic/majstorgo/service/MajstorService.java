@@ -39,4 +39,7 @@ public class MajstorService {
     }
 
 
+    public void deleteMajstor(int id) {
+        majstorRepository.deleteById(id);
+    }
 }

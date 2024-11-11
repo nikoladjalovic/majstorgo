@@ -26,4 +26,9 @@ public class MajstorController {
     public void updateMajstor(@RequestBody Majstor majstor, @PathVariable("id") int id){
         majstorService.updateMajstor(majstor, id);
     }
+
+    @DeleteMapping("/majstor/{id}")
+    public void deleteMajstor(@PathVariable("id") int id){
+        majstorService.deleteMajstor(id);
+    }
 }
